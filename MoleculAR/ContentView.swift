@@ -9,31 +9,64 @@
 import SwiftUI
 import RealityKit
 
-struct ContentView : View {
+struct MoleculeView: View {
+    
+    var name: String
+    
+    init(moleculeModel: MoleculeModel) {
+        self.controller = ArController()
+        self.name = moleculeModel.name
+        self.controller.setMolecule(molecule: moleculeModel)
+    }
+        
+    let controller: ArController
+    @State var isVrMode = false
+
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack {
+            controller
+            HStack {
+                Spacer()
+                VStack {
+                    Spacer()
+                    Button(action: {
+                        if (self.isVrMode) {
+                            self.isVrMode = false
+                            self.controller.setupForNonAr()
+                        } else {
+                            self.isVrMode = true
+                            self.controller.setupForAr()
+                        }
+                    }) {
+                        Text("TOGGLE")
+                    }
+                }
+            }
+        }
+        .navigationBarTitle(self.name, displayMode: .inline)
+            
     }
 }
 
-struct ARViewContainer: UIViewRepresentable {
+
+struct ContentView : View {
     
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        return arView
-        
+    var body: some View {
+
+        NavigationView {
+            List(MoleculeModel.getModels()) { it in
+                NavigationLink(destination: MoleculeView(moleculeModel: it)) {
+                    VStack(alignment: .leading) {
+                        Text(it.name)
+                        Text(it.file).font(.caption)
+                    }.padding(5)
+                }
+               
+            }
+        }.navigationTitle("Select Molecule")
     }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    
 }
+
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {

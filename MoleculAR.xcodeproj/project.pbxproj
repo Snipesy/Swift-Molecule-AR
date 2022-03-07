@@ -7,14 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7618FBAE251BB3350012D611 /* TransformGestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618FBAD251BB3350012D611 /* TransformGestureController.swift */; };
 		765847DF250D2E2C002C325B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765847DE250D2E2C002C325B /* AppDelegate.swift */; };
 		765847E1250D2E2C002C325B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765847E0250D2E2C002C325B /* ContentView.swift */; };
-		765847E3250D2E2C002C325B /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 765847E2250D2E2C002C325B /* Experience.rcproject */; };
 		765847E5250D2E30002C325B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765847E4250D2E30002C325B /* Assets.xcassets */; };
 		765847E8250D2E30002C325B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765847E7250D2E30002C325B /* Preview Assets.xcassets */; };
 		765847EB250D2E30002C325B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765847E9250D2E30002C325B /* LaunchScreen.storyboard */; };
 		765847F6250D2E30002C325B /* MoleculARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765847F5250D2E30002C325B /* MoleculARTests.swift */; };
 		76584801250D2E30002C325B /* MoleculARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76584800250D2E30002C325B /* MoleculARUITests.swift */; };
+		76606FC0250EB30A001E18C8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76606FBF250EB30A001E18C8 /* Extensions.swift */; };
+		76607003250F1E7D001E18C8 /* MolecularARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76607002250F1E7D001E18C8 /* MolecularARView.swift */; };
+		76607006250F20F4001E18C8 /* AtomEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76607005250F20F4001E18C8 /* AtomEntity.swift */; };
+		7660700A250FDE3B001E18C8 /* Molecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76607009250FDE3B001E18C8 /* Molecule.swift */; };
+		7660700C250FEF2A001E18C8 /* Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660700B250FEF2A001E18C8 /* Bond.swift */; };
+		7660701025101C54001E18C8 /* NonArCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660700F25101C54001E18C8 /* NonArCameraController.swift */; };
+		766070162510338B001E18C8 /* MoleecualrArView$Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766070152510338B001E18C8 /* MoleecualrArView$Gesture.swift */; };
+		7660701B25106CBF001E18C8 /* MoleculeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660701A25106CBF001E18C8 /* MoleculeModel.swift */; };
+		7660701D25106D44001E18C8 /* AtomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660701C25106D44001E18C8 /* AtomModel.swift */; };
+		7660701F25106D91001E18C8 /* BondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660701E25106D91001E18C8 /* BondModel.swift */; };
+		7660702725108A6B001E18C8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660702625108A6B001E18C8 /* Extension.swift */; };
+		7660702B25109529001E18C8 /* ModelCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660702A25109529001E18C8 /* ModelCache.swift */; };
+		767960C925156A9100642CAD /* TransformDragEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767960C825156A9100642CAD /* TransformDragEntity.swift */; };
+		767960CB2515721D00642CAD /* TransformDragArrowEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767960CA2515721D00642CAD /* TransformDragArrowEntity.swift */; };
+		767960CD25157A4B00642CAD /* Arrow.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 767960CC25157A4B00642CAD /* Arrow.usdc */; };
+		768CA4B32510FD540089351E /* CmlImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768CA4B22510FD540089351E /* CmlImport.swift */; };
+		768CA4B5251100BB0089351E /* caffeine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 768CA4B4251100BB0089351E /* caffeine.cml */; };
+		76E30D4927A435C70011CCAC /* D-leucine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1427A435C50011CCAC /* D-leucine.cml */; };
+		76E30D4A27A435C70011CCAC /* D-glutamic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1527A435C50011CCAC /* D-glutamic_acid.cml */; };
+		76E30D4B27A435C70011CCAC /* L-serine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1627A435C50011CCAC /* L-serine.cml */; };
+		76E30D4C27A435C70011CCAC /* D-asparagine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1727A435C50011CCAC /* D-asparagine.cml */; };
+		76E30D4D27A435C70011CCAC /* ethanol.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1827A435C50011CCAC /* ethanol.cml */; };
+		76E30D4E27A435C70011CCAC /* D-histidine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1927A435C50011CCAC /* D-histidine.cml */; };
+		76E30D4F27A435C70011CCAC /* propyne.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1A27A435C50011CCAC /* propyne.cml */; };
+		76E30D5027A435C70011CCAC /* L-aspartic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1B27A435C60011CCAC /* L-aspartic_acid.cml */; };
+		76E30D5127A435C70011CCAC /* L-phenylalanine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1C27A435C60011CCAC /* L-phenylalanine.cml */; };
+		76E30D5227A435C70011CCAC /* D-alanine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1D27A435C60011CCAC /* D-alanine.cml */; };
+		76E30D5327A435C70011CCAC /* L-threonine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1E27A435C60011CCAC /* L-threonine.cml */; };
+		76E30D5427A435C70011CCAC /* D-tryptophan.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D1F27A435C60011CCAC /* D-tryptophan.cml */; };
+		76E30D5527A435C70011CCAC /* D-lysine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2027A435C60011CCAC /* D-lysine.cml */; };
+		76E30D5627A435C70011CCAC /* 2R_3R_4R_5S-hexane-1_2_3_4_5_6-hexol.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2127A435C60011CCAC /* 2R_3R_4R_5S-hexane-1_2_3_4_5_6-hexol.cml */; };
+		76E30D5727A435C70011CCAC /* D-glutamine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2227A435C60011CCAC /* D-glutamine.cml */; };
+		76E30D5827A435C70011CCAC /* L-methionine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2327A435C60011CCAC /* L-methionine.cml */; };
+		76E30D5927A435C70011CCAC /* L-asparagine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2427A435C60011CCAC /* L-asparagine.cml */; };
+		76E30D5A27A435C70011CCAC /* L-histidine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2527A435C60011CCAC /* L-histidine.cml */; };
+		76E30D5B27A435C70011CCAC /* D-allo-threonine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2627A435C60011CCAC /* D-allo-threonine.cml */; };
+		76E30D5C27A435C70011CCAC /* glycine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2727A435C60011CCAC /* glycine.cml */; };
+		76E30D5D27A435C70011CCAC /* D-proline.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2827A435C60011CCAC /* D-proline.cml */; };
+		76E30D5E27A435C70011CCAC /* D-cysteine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2927A435C60011CCAC /* D-cysteine.cml */; };
+		76E30D5F27A435C70011CCAC /* L-glutamine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2A27A435C60011CCAC /* L-glutamine.cml */; };
+		76E30D6027A435C70011CCAC /* D-isoleucine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2B27A435C60011CCAC /* D-isoleucine.cml */; };
+		76E30D6127A435C70011CCAC /* hexanal.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2C27A435C60011CCAC /* hexanal.cml */; };
+		76E30D6227A435C70011CCAC /* but-1-ene.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2D27A435C60011CCAC /* but-1-ene.cml */; };
+		76E30D6327A435C70011CCAC /* L-cysteine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2E27A435C60011CCAC /* L-cysteine.cml */; };
+		76E30D6427A435C70011CCAC /* D-arginine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D2F27A435C60011CCAC /* D-arginine.cml */; };
+		76E30D6527A435C70011CCAC /* L-valine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3027A435C60011CCAC /* L-valine.cml */; };
+		76E30D6627A435C70011CCAC /* methanol.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3127A435C60011CCAC /* methanol.cml */; };
+		76E30D6727A435C70011CCAC /* D-valine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3227A435C60011CCAC /* D-valine.cml */; };
+		76E30D6827A435C70011CCAC /* L-proline.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3327A435C60011CCAC /* L-proline.cml */; };
+		76E30D6927A435C70011CCAC /* cyclopentane.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3427A435C60011CCAC /* cyclopentane.cml */; };
+		76E30D6A27A435C70011CCAC /* L-allo-isoleucine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3527A435C70011CCAC /* L-allo-isoleucine.cml */; };
+		76E30D6B27A435C70011CCAC /* L-leucine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3627A435C70011CCAC /* L-leucine.cml */; };
+		76E30D6C27A435C70011CCAC /* D-serine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3727A435C70011CCAC /* D-serine.cml */; };
+		76E30D6D27A435C70011CCAC /* butan-1-ol.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3827A435C70011CCAC /* butan-1-ol.cml */; };
+		76E30D6E27A435C70011CCAC /* D-phenylalanine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3927A435C70011CCAC /* D-phenylalanine.cml */; };
+		76E30D6F27A435C70011CCAC /* L-arginine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3A27A435C70011CCAC /* L-arginine.cml */; };
+		76E30D7027A435C70011CCAC /* L-isoleucine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3B27A435C70011CCAC /* L-isoleucine.cml */; };
+		76E30D7127A435C70011CCAC /* D-tyrosine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3C27A435C70011CCAC /* D-tyrosine.cml */; };
+		76E30D7227A435C70011CCAC /* L-alanine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3D27A435C70011CCAC /* L-alanine.cml */; };
+		76E30D7327A435C70011CCAC /* 2R-2-methylbutanal.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3E27A435C70011CCAC /* 2R-2-methylbutanal.cml */; };
+		76E30D7427A435C70011CCAC /* L-lysine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D3F27A435C70011CCAC /* L-lysine.cml */; };
+		76E30D7527A435C70011CCAC /* L-tyrosine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4027A435C70011CCAC /* L-tyrosine.cml */; };
+		76E30D7627A435C70011CCAC /* propanal.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4127A435C70011CCAC /* propanal.cml */; };
+		76E30D7727A435C70011CCAC /* L-tryptophan.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4227A435C70011CCAC /* L-tryptophan.cml */; };
+		76E30D7827A435C70011CCAC /* hexan-1-ol.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4327A435C70011CCAC /* hexan-1-ol.cml */; };
+		76E30D7927A435C70011CCAC /* L-glutamic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4427A435C70011CCAC /* L-glutamic_acid.cml */; };
+		76E30D7A27A435C70011CCAC /* D-threonine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4527A435C70011CCAC /* D-threonine.cml */; };
+		76E30D7B27A435C70011CCAC /* acetamide.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4627A435C70011CCAC /* acetamide.cml */; };
+		76E30D7C27A435C70011CCAC /* L-4-nitrophenylalanine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4727A435C70011CCAC /* L-4-nitrophenylalanine.cml */; };
+		76E30D7D27A435C70011CCAC /* D-aspartic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D4827A435C70011CCAC /* D-aspartic_acid.cml */; };
+		76E30D9A27A4371C0011CCAC /* N-4-hydroxyphenyl_acetamide.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D7E27A437180011CCAC /* N-4-hydroxyphenyl_acetamide.cml */; };
+		76E30D9B27A4371C0011CCAC /* guanine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D7F27A437180011CCAC /* guanine.cml */; };
+		76E30D9C27A4371C0011CCAC /* urea.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8027A437180011CCAC /* urea.cml */; };
+		76E30D9D27A4371C0011CCAC /* oxalic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8127A437190011CCAC /* oxalic_acid.cml */; };
+		76E30D9E27A4371C0011CCAC /* oleic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8227A437190011CCAC /* oleic_acid.cml */; };
+		76E30D9F27A4371C0011CCAC /* cytosine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8327A437190011CCAC /* cytosine.cml */; };
+		76E30DA027A4371C0011CCAC /* acepromazine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8427A437190011CCAC /* acepromazine.cml */; };
+		76E30DA127A4371C0011CCAC /* d-ribose.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8527A437190011CCAC /* d-ribose.cml */; };
+		76E30DA227A4371C0011CCAC /* formic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8627A437190011CCAC /* formic_acid.cml */; };
+		76E30DA327A4371C0011CCAC /* methylamine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8727A437190011CCAC /* methylamine.cml */; };
+		76E30DA427A4371C0011CCAC /* water.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8827A4371A0011CCAC /* water.cml */; };
+		76E30DA527A4371C0011CCAC /* ethylamine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8927A4371A0011CCAC /* ethylamine.cml */; };
+		76E30DA627A4371C0011CCAC /* acetone.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8A27A4371A0011CCAC /* acetone.cml */; };
+		76E30DA727A4371C0011CCAC /* ammonia.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8B27A4371A0011CCAC /* ammonia.cml */; };
+		76E30DA827A4371C0011CCAC /* dimethylamine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8C27A4371A0011CCAC /* dimethylamine.cml */; };
+		76E30DA927A4371C0011CCAC /* diazepam.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8D27A4371A0011CCAC /* diazepam.cml */; };
+		76E30DAA27A4371C0011CCAC /* 4-acetamidophenyl_2-hydroxybenzoate.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8E27A4371A0011CCAC /* 4-acetamidophenyl_2-hydroxybenzoate.cml */; };
+		76E30DAB27A4371C0011CCAC /* D-amphetamine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D8F27A4371A0011CCAC /* D-amphetamine.cml */; };
+		76E30DAC27A4371C0011CCAC /* adenine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9027A4371B0011CCAC /* adenine.cml */; };
+		76E30DAD27A4371C0011CCAC /* diethylamine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9127A4371B0011CCAC /* diethylamine.cml */; };
+		76E30DAE27A4371C0011CCAC /* pyridine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9227A4371B0011CCAC /* pyridine.cml */; };
+		76E30DAF27A4371C0011CCAC /* butanoic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9327A4371B0011CCAC /* butanoic_acid.cml */; };
+		76E30DB027A4371C0011CCAC /* acetic_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9427A4371B0011CCAC /* acetic_acid.cml */; };
+		76E30DB127A4371C0011CCAC /* thymine.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9527A4371B0011CCAC /* thymine.cml */; };
+		76E30DB227A4371C0011CCAC /* citric_acid.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9627A4371B0011CCAC /* citric_acid.cml */; };
+		76E30DB327A4371C0011CCAC /* phenol.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9727A4371B0011CCAC /* phenol.cml */; };
+		76E30DB427A4371C0011CCAC /* uracil.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9827A4371B0011CCAC /* uracil.cml */; };
+		76E30DB527A4371C0011CCAC /* d-fructose.cml in Resources */ = {isa = PBXBuildFile; fileRef = 76E30D9927A4371B0011CCAC /* d-fructose.cml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +133,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7618FBAD251BB3350012D611 /* TransformGestureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformGestureController.swift; sourceTree = "<group>"; };
 		765847DB250D2E2C002C325B /* MoleculAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoleculAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765847DE250D2E2C002C325B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		765847E0250D2E2C002C325B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		765847E2250D2E2C002C325B /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		765847E4250D2E30002C325B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		765847E7250D2E30002C325B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		765847EA250D2E30002C325B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +147,104 @@
 		765847FC250D2E30002C325B /* MoleculARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoleculARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76584800250D2E30002C325B /* MoleculARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleculARUITests.swift; sourceTree = "<group>"; };
 		76584802250D2E30002C325B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76606FBF250EB30A001E18C8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		76607002250F1E7D001E18C8 /* MolecularARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolecularARView.swift; sourceTree = "<group>"; };
+		76607005250F20F4001E18C8 /* AtomEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomEntity.swift; sourceTree = "<group>"; };
+		76607009250FDE3B001E18C8 /* Molecule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Molecule.swift; sourceTree = "<group>"; };
+		7660700B250FEF2A001E18C8 /* Bond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bond.swift; sourceTree = "<group>"; };
+		7660700F25101C54001E18C8 /* NonArCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonArCameraController.swift; sourceTree = "<group>"; };
+		766070152510338B001E18C8 /* MoleecualrArView$Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleecualrArView$Gesture.swift; sourceTree = "<group>"; };
+		7660701A25106CBF001E18C8 /* MoleculeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleculeModel.swift; sourceTree = "<group>"; };
+		7660701C25106D44001E18C8 /* AtomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomModel.swift; sourceTree = "<group>"; };
+		7660701E25106D91001E18C8 /* BondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BondModel.swift; sourceTree = "<group>"; };
+		7660702625108A6B001E18C8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		7660702A25109529001E18C8 /* ModelCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCache.swift; sourceTree = "<group>"; };
+		767960C825156A9100642CAD /* TransformDragEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformDragEntity.swift; sourceTree = "<group>"; };
+		767960CA2515721D00642CAD /* TransformDragArrowEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformDragArrowEntity.swift; sourceTree = "<group>"; };
+		767960CC25157A4B00642CAD /* Arrow.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrow.usdc; sourceTree = "<group>"; };
+		768CA4B22510FD540089351E /* CmlImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CmlImport.swift; sourceTree = "<group>"; };
+		768CA4B4251100BB0089351E /* caffeine.cml */ = {isa = PBXFileReference; lastKnownFileType = text; path = caffeine.cml; sourceTree = "<group>"; };
+		76E30D1427A435C50011CCAC /* D-leucine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-leucine.cml"; sourceTree = "<group>"; };
+		76E30D1527A435C50011CCAC /* D-glutamic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-glutamic_acid.cml"; sourceTree = "<group>"; };
+		76E30D1627A435C50011CCAC /* L-serine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-serine.cml"; sourceTree = "<group>"; };
+		76E30D1727A435C50011CCAC /* D-asparagine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-asparagine.cml"; sourceTree = "<group>"; };
+		76E30D1827A435C50011CCAC /* ethanol.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ethanol.cml; sourceTree = "<group>"; };
+		76E30D1927A435C50011CCAC /* D-histidine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-histidine.cml"; sourceTree = "<group>"; };
+		76E30D1A27A435C50011CCAC /* propyne.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = propyne.cml; sourceTree = "<group>"; };
+		76E30D1B27A435C60011CCAC /* L-aspartic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-aspartic_acid.cml"; sourceTree = "<group>"; };
+		76E30D1C27A435C60011CCAC /* L-phenylalanine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-phenylalanine.cml"; sourceTree = "<group>"; };
+		76E30D1D27A435C60011CCAC /* D-alanine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-alanine.cml"; sourceTree = "<group>"; };
+		76E30D1E27A435C60011CCAC /* L-threonine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-threonine.cml"; sourceTree = "<group>"; };
+		76E30D1F27A435C60011CCAC /* D-tryptophan.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-tryptophan.cml"; sourceTree = "<group>"; };
+		76E30D2027A435C60011CCAC /* D-lysine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-lysine.cml"; sourceTree = "<group>"; };
+		76E30D2127A435C60011CCAC /* 2R_3R_4R_5S-hexane-1_2_3_4_5_6-hexol.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2R_3R_4R_5S-hexane-1_2_3_4_5_6-hexol.cml"; sourceTree = "<group>"; };
+		76E30D2227A435C60011CCAC /* D-glutamine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-glutamine.cml"; sourceTree = "<group>"; };
+		76E30D2327A435C60011CCAC /* L-methionine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-methionine.cml"; sourceTree = "<group>"; };
+		76E30D2427A435C60011CCAC /* L-asparagine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-asparagine.cml"; sourceTree = "<group>"; };
+		76E30D2527A435C60011CCAC /* L-histidine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-histidine.cml"; sourceTree = "<group>"; };
+		76E30D2627A435C60011CCAC /* D-allo-threonine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-allo-threonine.cml"; sourceTree = "<group>"; };
+		76E30D2727A435C60011CCAC /* glycine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = glycine.cml; sourceTree = "<group>"; };
+		76E30D2827A435C60011CCAC /* D-proline.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-proline.cml"; sourceTree = "<group>"; };
+		76E30D2927A435C60011CCAC /* D-cysteine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-cysteine.cml"; sourceTree = "<group>"; };
+		76E30D2A27A435C60011CCAC /* L-glutamine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-glutamine.cml"; sourceTree = "<group>"; };
+		76E30D2B27A435C60011CCAC /* D-isoleucine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-isoleucine.cml"; sourceTree = "<group>"; };
+		76E30D2C27A435C60011CCAC /* hexanal.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hexanal.cml; sourceTree = "<group>"; };
+		76E30D2D27A435C60011CCAC /* but-1-ene.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "but-1-ene.cml"; sourceTree = "<group>"; };
+		76E30D2E27A435C60011CCAC /* L-cysteine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-cysteine.cml"; sourceTree = "<group>"; };
+		76E30D2F27A435C60011CCAC /* D-arginine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-arginine.cml"; sourceTree = "<group>"; };
+		76E30D3027A435C60011CCAC /* L-valine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-valine.cml"; sourceTree = "<group>"; };
+		76E30D3127A435C60011CCAC /* methanol.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = methanol.cml; sourceTree = "<group>"; };
+		76E30D3227A435C60011CCAC /* D-valine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-valine.cml"; sourceTree = "<group>"; };
+		76E30D3327A435C60011CCAC /* L-proline.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-proline.cml"; sourceTree = "<group>"; };
+		76E30D3427A435C60011CCAC /* cyclopentane.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cyclopentane.cml; sourceTree = "<group>"; };
+		76E30D3527A435C70011CCAC /* L-allo-isoleucine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-allo-isoleucine.cml"; sourceTree = "<group>"; };
+		76E30D3627A435C70011CCAC /* L-leucine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-leucine.cml"; sourceTree = "<group>"; };
+		76E30D3727A435C70011CCAC /* D-serine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-serine.cml"; sourceTree = "<group>"; };
+		76E30D3827A435C70011CCAC /* butan-1-ol.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "butan-1-ol.cml"; sourceTree = "<group>"; };
+		76E30D3927A435C70011CCAC /* D-phenylalanine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-phenylalanine.cml"; sourceTree = "<group>"; };
+		76E30D3A27A435C70011CCAC /* L-arginine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-arginine.cml"; sourceTree = "<group>"; };
+		76E30D3B27A435C70011CCAC /* L-isoleucine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-isoleucine.cml"; sourceTree = "<group>"; };
+		76E30D3C27A435C70011CCAC /* D-tyrosine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-tyrosine.cml"; sourceTree = "<group>"; };
+		76E30D3D27A435C70011CCAC /* L-alanine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-alanine.cml"; sourceTree = "<group>"; };
+		76E30D3E27A435C70011CCAC /* 2R-2-methylbutanal.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "2R-2-methylbutanal.cml"; sourceTree = "<group>"; };
+		76E30D3F27A435C70011CCAC /* L-lysine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-lysine.cml"; sourceTree = "<group>"; };
+		76E30D4027A435C70011CCAC /* L-tyrosine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-tyrosine.cml"; sourceTree = "<group>"; };
+		76E30D4127A435C70011CCAC /* propanal.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = propanal.cml; sourceTree = "<group>"; };
+		76E30D4227A435C70011CCAC /* L-tryptophan.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-tryptophan.cml"; sourceTree = "<group>"; };
+		76E30D4327A435C70011CCAC /* hexan-1-ol.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "hexan-1-ol.cml"; sourceTree = "<group>"; };
+		76E30D4427A435C70011CCAC /* L-glutamic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-glutamic_acid.cml"; sourceTree = "<group>"; };
+		76E30D4527A435C70011CCAC /* D-threonine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-threonine.cml"; sourceTree = "<group>"; };
+		76E30D4627A435C70011CCAC /* acetamide.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = acetamide.cml; sourceTree = "<group>"; };
+		76E30D4727A435C70011CCAC /* L-4-nitrophenylalanine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "L-4-nitrophenylalanine.cml"; sourceTree = "<group>"; };
+		76E30D4827A435C70011CCAC /* D-aspartic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-aspartic_acid.cml"; sourceTree = "<group>"; };
+		76E30D7E27A437180011CCAC /* N-4-hydroxyphenyl_acetamide.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "N-4-hydroxyphenyl_acetamide.cml"; sourceTree = "<group>"; };
+		76E30D7F27A437180011CCAC /* guanine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = guanine.cml; sourceTree = "<group>"; };
+		76E30D8027A437180011CCAC /* urea.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = urea.cml; sourceTree = "<group>"; };
+		76E30D8127A437190011CCAC /* oxalic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = oxalic_acid.cml; sourceTree = "<group>"; };
+		76E30D8227A437190011CCAC /* oleic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = oleic_acid.cml; sourceTree = "<group>"; };
+		76E30D8327A437190011CCAC /* cytosine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cytosine.cml; sourceTree = "<group>"; };
+		76E30D8427A437190011CCAC /* acepromazine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = acepromazine.cml; sourceTree = "<group>"; };
+		76E30D8527A437190011CCAC /* d-ribose.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "d-ribose.cml"; sourceTree = "<group>"; };
+		76E30D8627A437190011CCAC /* formic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = formic_acid.cml; sourceTree = "<group>"; };
+		76E30D8727A437190011CCAC /* methylamine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = methylamine.cml; sourceTree = "<group>"; };
+		76E30D8827A4371A0011CCAC /* water.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = water.cml; sourceTree = "<group>"; };
+		76E30D8927A4371A0011CCAC /* ethylamine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ethylamine.cml; sourceTree = "<group>"; };
+		76E30D8A27A4371A0011CCAC /* acetone.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = acetone.cml; sourceTree = "<group>"; };
+		76E30D8B27A4371A0011CCAC /* ammonia.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ammonia.cml; sourceTree = "<group>"; };
+		76E30D8C27A4371A0011CCAC /* dimethylamine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dimethylamine.cml; sourceTree = "<group>"; };
+		76E30D8D27A4371A0011CCAC /* diazepam.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = diazepam.cml; sourceTree = "<group>"; };
+		76E30D8E27A4371A0011CCAC /* 4-acetamidophenyl_2-hydroxybenzoate.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "4-acetamidophenyl_2-hydroxybenzoate.cml"; sourceTree = "<group>"; };
+		76E30D8F27A4371A0011CCAC /* D-amphetamine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "D-amphetamine.cml"; sourceTree = "<group>"; };
+		76E30D9027A4371B0011CCAC /* adenine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = adenine.cml; sourceTree = "<group>"; };
+		76E30D9127A4371B0011CCAC /* diethylamine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = diethylamine.cml; sourceTree = "<group>"; };
+		76E30D9227A4371B0011CCAC /* pyridine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pyridine.cml; sourceTree = "<group>"; };
+		76E30D9327A4371B0011CCAC /* butanoic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = butanoic_acid.cml; sourceTree = "<group>"; };
+		76E30D9427A4371B0011CCAC /* acetic_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = acetic_acid.cml; sourceTree = "<group>"; };
+		76E30D9527A4371B0011CCAC /* thymine.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = thymine.cml; sourceTree = "<group>"; };
+		76E30D9627A4371B0011CCAC /* citric_acid.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = citric_acid.cml; sourceTree = "<group>"; };
+		76E30D9727A4371B0011CCAC /* phenol.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = phenol.cml; sourceTree = "<group>"; };
+		76E30D9827A4371B0011CCAC /* uracil.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = uracil.cml; sourceTree = "<group>"; };
+		76E30D9927A4371B0011CCAC /* d-fructose.cml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "d-fructose.cml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +275,8 @@
 		765847D2250D2E2C002C325B = {
 			isa = PBXGroup;
 			children = (
+				7660702125107685001E18C8 /* Assets */,
+				7660700D250FF41C001E18C8 /* Models */,
 				765847DD250D2E2C002C325B /* MoleculAR */,
 				765847F4250D2E30002C325B /* MoleculARTests */,
 				765847FF250D2E30002C325B /* MoleculARUITests */,
@@ -99,13 +297,17 @@
 		765847DD250D2E2C002C325B /* MoleculAR */ = {
 			isa = PBXGroup;
 			children = (
+				7660701725106C8A001E18C8 /* MolecularModel */,
+				7660700E25101C33001E18C8 /* ArView */,
+				76607004250F20EA001E18C8 /* MolecularComponents */,
+				76606FFF250F1A44001E18C8 /* New Group */,
 				765847DE250D2E2C002C325B /* AppDelegate.swift */,
 				765847E0250D2E2C002C325B /* ContentView.swift */,
-				765847E2250D2E2C002C325B /* Experience.rcproject */,
 				765847E4250D2E30002C325B /* Assets.xcassets */,
 				765847E9250D2E30002C325B /* LaunchScreen.storyboard */,
 				765847EC250D2E30002C325B /* Info.plist */,
 				765847E6250D2E30002C325B /* Preview Content */,
+				76606FBF250EB30A001E18C8 /* Extensions.swift */,
 			);
 			path = MoleculAR;
 			sourceTree = "<group>";
@@ -134,6 +336,146 @@
 				76584802250D2E30002C325B /* Info.plist */,
 			);
 			path = MoleculARUITests;
+			sourceTree = "<group>";
+		};
+		76606FFF250F1A44001E18C8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		76607004250F20EA001E18C8 /* MolecularComponents */ = {
+			isa = PBXGroup;
+			children = (
+				76607005250F20F4001E18C8 /* AtomEntity.swift */,
+				76607009250FDE3B001E18C8 /* Molecule.swift */,
+				7660700B250FEF2A001E18C8 /* Bond.swift */,
+				7660702A25109529001E18C8 /* ModelCache.swift */,
+				767960C825156A9100642CAD /* TransformDragEntity.swift */,
+				767960CA2515721D00642CAD /* TransformDragArrowEntity.swift */,
+			);
+			path = MolecularComponents;
+			sourceTree = "<group>";
+		};
+		7660700D250FF41C001E18C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7660700E25101C33001E18C8 /* ArView */ = {
+			isa = PBXGroup;
+			children = (
+				76607002250F1E7D001E18C8 /* MolecularARView.swift */,
+				7660700F25101C54001E18C8 /* NonArCameraController.swift */,
+				766070152510338B001E18C8 /* MoleecualrArView$Gesture.swift */,
+				7618FBAD251BB3350012D611 /* TransformGestureController.swift */,
+			);
+			path = ArView;
+			sourceTree = "<group>";
+		};
+		7660701725106C8A001E18C8 /* MolecularModel */ = {
+			isa = PBXGroup;
+			children = (
+				7660701A25106CBF001E18C8 /* MoleculeModel.swift */,
+				7660701C25106D44001E18C8 /* AtomModel.swift */,
+				7660701E25106D91001E18C8 /* BondModel.swift */,
+				7660702625108A6B001E18C8 /* Extension.swift */,
+				768CA4B22510FD540089351E /* CmlImport.swift */,
+			);
+			path = MolecularModel;
+			sourceTree = "<group>";
+		};
+		7660702125107685001E18C8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				76E30D8E27A4371A0011CCAC /* 4-acetamidophenyl_2-hydroxybenzoate.cml */,
+				76E30D8427A437190011CCAC /* acepromazine.cml */,
+				76E30D9427A4371B0011CCAC /* acetic_acid.cml */,
+				76E30D8A27A4371A0011CCAC /* acetone.cml */,
+				76E30D9027A4371B0011CCAC /* adenine.cml */,
+				76E30D8B27A4371A0011CCAC /* ammonia.cml */,
+				76E30D9327A4371B0011CCAC /* butanoic_acid.cml */,
+				76E30D9627A4371B0011CCAC /* citric_acid.cml */,
+				76E30D8327A437190011CCAC /* cytosine.cml */,
+				76E30D8F27A4371A0011CCAC /* D-amphetamine.cml */,
+				76E30D9927A4371B0011CCAC /* d-fructose.cml */,
+				76E30D8527A437190011CCAC /* d-ribose.cml */,
+				76E30D8D27A4371A0011CCAC /* diazepam.cml */,
+				76E30D9127A4371B0011CCAC /* diethylamine.cml */,
+				76E30D8C27A4371A0011CCAC /* dimethylamine.cml */,
+				76E30D8927A4371A0011CCAC /* ethylamine.cml */,
+				76E30D8627A437190011CCAC /* formic_acid.cml */,
+				76E30D7F27A437180011CCAC /* guanine.cml */,
+				76E30D8727A437190011CCAC /* methylamine.cml */,
+				76E30D7E27A437180011CCAC /* N-4-hydroxyphenyl_acetamide.cml */,
+				76E30D8227A437190011CCAC /* oleic_acid.cml */,
+				76E30D8127A437190011CCAC /* oxalic_acid.cml */,
+				76E30D9727A4371B0011CCAC /* phenol.cml */,
+				76E30D9227A4371B0011CCAC /* pyridine.cml */,
+				76E30D9527A4371B0011CCAC /* thymine.cml */,
+				76E30D9827A4371B0011CCAC /* uracil.cml */,
+				76E30D8027A437180011CCAC /* urea.cml */,
+				76E30D8827A4371A0011CCAC /* water.cml */,
+				76E30D2127A435C60011CCAC /* 2R_3R_4R_5S-hexane-1_2_3_4_5_6-hexol.cml */,
+				76E30D3E27A435C70011CCAC /* 2R-2-methylbutanal.cml */,
+				76E30D4627A435C70011CCAC /* acetamide.cml */,
+				76E30D2D27A435C60011CCAC /* but-1-ene.cml */,
+				76E30D3827A435C70011CCAC /* butan-1-ol.cml */,
+				76E30D3427A435C60011CCAC /* cyclopentane.cml */,
+				76E30D1D27A435C60011CCAC /* D-alanine.cml */,
+				76E30D2627A435C60011CCAC /* D-allo-threonine.cml */,
+				76E30D2F27A435C60011CCAC /* D-arginine.cml */,
+				76E30D1727A435C50011CCAC /* D-asparagine.cml */,
+				76E30D4827A435C70011CCAC /* D-aspartic_acid.cml */,
+				76E30D2927A435C60011CCAC /* D-cysteine.cml */,
+				76E30D1527A435C50011CCAC /* D-glutamic_acid.cml */,
+				76E30D2227A435C60011CCAC /* D-glutamine.cml */,
+				76E30D1927A435C50011CCAC /* D-histidine.cml */,
+				76E30D2B27A435C60011CCAC /* D-isoleucine.cml */,
+				76E30D1427A435C50011CCAC /* D-leucine.cml */,
+				76E30D2027A435C60011CCAC /* D-lysine.cml */,
+				76E30D3927A435C70011CCAC /* D-phenylalanine.cml */,
+				76E30D2827A435C60011CCAC /* D-proline.cml */,
+				76E30D3727A435C70011CCAC /* D-serine.cml */,
+				76E30D4527A435C70011CCAC /* D-threonine.cml */,
+				76E30D1F27A435C60011CCAC /* D-tryptophan.cml */,
+				76E30D3C27A435C70011CCAC /* D-tyrosine.cml */,
+				76E30D3227A435C60011CCAC /* D-valine.cml */,
+				76E30D1827A435C50011CCAC /* ethanol.cml */,
+				76E30D2727A435C60011CCAC /* glycine.cml */,
+				76E30D4327A435C70011CCAC /* hexan-1-ol.cml */,
+				76E30D2C27A435C60011CCAC /* hexanal.cml */,
+				76E30D4727A435C70011CCAC /* L-4-nitrophenylalanine.cml */,
+				76E30D3D27A435C70011CCAC /* L-alanine.cml */,
+				76E30D3527A435C70011CCAC /* L-allo-isoleucine.cml */,
+				76E30D3A27A435C70011CCAC /* L-arginine.cml */,
+				76E30D2427A435C60011CCAC /* L-asparagine.cml */,
+				76E30D1B27A435C60011CCAC /* L-aspartic_acid.cml */,
+				76E30D2E27A435C60011CCAC /* L-cysteine.cml */,
+				76E30D4427A435C70011CCAC /* L-glutamic_acid.cml */,
+				76E30D2A27A435C60011CCAC /* L-glutamine.cml */,
+				76E30D2527A435C60011CCAC /* L-histidine.cml */,
+				76E30D3B27A435C70011CCAC /* L-isoleucine.cml */,
+				76E30D3627A435C70011CCAC /* L-leucine.cml */,
+				76E30D3F27A435C70011CCAC /* L-lysine.cml */,
+				76E30D2327A435C60011CCAC /* L-methionine.cml */,
+				76E30D1C27A435C60011CCAC /* L-phenylalanine.cml */,
+				76E30D3327A435C60011CCAC /* L-proline.cml */,
+				76E30D1627A435C50011CCAC /* L-serine.cml */,
+				76E30D1E27A435C60011CCAC /* L-threonine.cml */,
+				76E30D4227A435C70011CCAC /* L-tryptophan.cml */,
+				76E30D4027A435C70011CCAC /* L-tyrosine.cml */,
+				76E30D3027A435C60011CCAC /* L-valine.cml */,
+				76E30D3127A435C60011CCAC /* methanol.cml */,
+				76E30D4127A435C70011CCAC /* propanal.cml */,
+				76E30D1A27A435C50011CCAC /* propyne.cml */,
+				767960CC25157A4B00642CAD /* Arrow.usdc */,
+				768CA4B4251100BB0089351E /* caffeine.cml */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +541,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Surreal Development LLC";
 				TargetAttributes = {
 					765847DA250D2E2C002C325B = {
@@ -240,9 +582,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E30D5B27A435C70011CCAC /* D-allo-threonine.cml in Resources */,
+				76E30DB427A4371C0011CCAC /* uracil.cml in Resources */,
+				76E30D5827A435C70011CCAC /* L-methionine.cml in Resources */,
+				76E30DA427A4371C0011CCAC /* water.cml in Resources */,
 				765847EB250D2E30002C325B /* LaunchScreen.storyboard in Resources */,
+				76E30DAC27A4371C0011CCAC /* adenine.cml in Resources */,
+				76E30D6A27A435C70011CCAC /* L-allo-isoleucine.cml in Resources */,
+				76E30D6927A435C70011CCAC /* cyclopentane.cml in Resources */,
+				76E30D7627A435C70011CCAC /* propanal.cml in Resources */,
+				76E30D4927A435C70011CCAC /* D-leucine.cml in Resources */,
+				76E30D5627A435C70011CCAC /* 2R_3R_4R_5S-hexane-1_2_3_4_5_6-hexol.cml in Resources */,
+				76E30D9B27A4371C0011CCAC /* guanine.cml in Resources */,
+				76E30D4F27A435C70011CCAC /* propyne.cml in Resources */,
+				76E30D6D27A435C70011CCAC /* butan-1-ol.cml in Resources */,
+				76E30D5727A435C70011CCAC /* D-glutamine.cml in Resources */,
+				76E30DA627A4371C0011CCAC /* acetone.cml in Resources */,
+				76E30D7327A435C70011CCAC /* 2R-2-methylbutanal.cml in Resources */,
+				76E30D7B27A435C70011CCAC /* acetamide.cml in Resources */,
+				76E30DA327A4371C0011CCAC /* methylamine.cml in Resources */,
+				76E30D6F27A435C70011CCAC /* L-arginine.cml in Resources */,
+				768CA4B5251100BB0089351E /* caffeine.cml in Resources */,
+				76E30D6027A435C70011CCAC /* D-isoleucine.cml in Resources */,
+				76E30DAD27A4371C0011CCAC /* diethylamine.cml in Resources */,
+				76E30D5127A435C70011CCAC /* L-phenylalanine.cml in Resources */,
+				76E30D6727A435C70011CCAC /* D-valine.cml in Resources */,
+				76E30D7A27A435C70011CCAC /* D-threonine.cml in Resources */,
+				76E30D7827A435C70011CCAC /* hexan-1-ol.cml in Resources */,
+				76E30D6B27A435C70011CCAC /* L-leucine.cml in Resources */,
+				76E30DB127A4371C0011CCAC /* thymine.cml in Resources */,
+				76E30D4E27A435C70011CCAC /* D-histidine.cml in Resources */,
+				76E30D4A27A435C70011CCAC /* D-glutamic_acid.cml in Resources */,
+				76E30D6E27A435C70011CCAC /* D-phenylalanine.cml in Resources */,
+				76E30D7927A435C70011CCAC /* L-glutamic_acid.cml in Resources */,
+				76E30DA827A4371C0011CCAC /* dimethylamine.cml in Resources */,
+				76E30DAF27A4371C0011CCAC /* butanoic_acid.cml in Resources */,
+				76E30D7227A435C70011CCAC /* L-alanine.cml in Resources */,
+				76E30D6127A435C70011CCAC /* hexanal.cml in Resources */,
+				76E30D5D27A435C70011CCAC /* D-proline.cml in Resources */,
+				76E30D5F27A435C70011CCAC /* L-glutamine.cml in Resources */,
+				76E30D7427A435C70011CCAC /* L-lysine.cml in Resources */,
 				765847E8250D2E30002C325B /* Preview Assets.xcassets in Resources */,
+				76E30D4B27A435C70011CCAC /* L-serine.cml in Resources */,
+				76E30DA927A4371C0011CCAC /* diazepam.cml in Resources */,
+				76E30DB327A4371C0011CCAC /* phenol.cml in Resources */,
+				76E30D7C27A435C70011CCAC /* L-4-nitrophenylalanine.cml in Resources */,
+				76E30D6C27A435C70011CCAC /* D-serine.cml in Resources */,
+				76E30DB027A4371C0011CCAC /* acetic_acid.cml in Resources */,
+				76E30D5C27A435C70011CCAC /* glycine.cml in Resources */,
+				76E30DA727A4371C0011CCAC /* ammonia.cml in Resources */,
+				76E30D9F27A4371C0011CCAC /* cytosine.cml in Resources */,
+				76E30D4C27A435C70011CCAC /* D-asparagine.cml in Resources */,
+				76E30D6827A435C70011CCAC /* L-proline.cml in Resources */,
+				76E30DAB27A4371C0011CCAC /* D-amphetamine.cml in Resources */,
 				765847E5250D2E30002C325B /* Assets.xcassets in Resources */,
+				76E30DA527A4371C0011CCAC /* ethylamine.cml in Resources */,
+				76E30D9C27A4371C0011CCAC /* urea.cml in Resources */,
+				76E30DA127A4371C0011CCAC /* d-ribose.cml in Resources */,
+				76E30D6627A435C70011CCAC /* methanol.cml in Resources */,
+				76E30D5E27A435C70011CCAC /* D-cysteine.cml in Resources */,
+				76E30D6327A435C70011CCAC /* L-cysteine.cml in Resources */,
+				76E30D6227A435C70011CCAC /* but-1-ene.cml in Resources */,
+				76E30D9A27A4371C0011CCAC /* N-4-hydroxyphenyl_acetamide.cml in Resources */,
+				76E30D5227A435C70011CCAC /* D-alanine.cml in Resources */,
+				76E30D5027A435C70011CCAC /* L-aspartic_acid.cml in Resources */,
+				76E30DA227A4371C0011CCAC /* formic_acid.cml in Resources */,
+				76E30DAA27A4371C0011CCAC /* 4-acetamidophenyl_2-hydroxybenzoate.cml in Resources */,
+				76E30DB227A4371C0011CCAC /* citric_acid.cml in Resources */,
+				76E30D4D27A435C70011CCAC /* ethanol.cml in Resources */,
+				76E30D9E27A4371C0011CCAC /* oleic_acid.cml in Resources */,
+				76E30D7727A435C70011CCAC /* L-tryptophan.cml in Resources */,
+				76E30D5327A435C70011CCAC /* L-threonine.cml in Resources */,
+				767960CD25157A4B00642CAD /* Arrow.usdc in Resources */,
+				76E30DAE27A4371C0011CCAC /* pyridine.cml in Resources */,
+				76E30D5427A435C70011CCAC /* D-tryptophan.cml in Resources */,
+				76E30DB527A4371C0011CCAC /* d-fructose.cml in Resources */,
+				76E30D7027A435C70011CCAC /* L-isoleucine.cml in Resources */,
+				76E30D7127A435C70011CCAC /* D-tyrosine.cml in Resources */,
+				76E30DA027A4371C0011CCAC /* acepromazine.cml in Resources */,
+				76E30D7527A435C70011CCAC /* L-tyrosine.cml in Resources */,
+				76E30D6427A435C70011CCAC /* D-arginine.cml in Resources */,
+				76E30D7D27A435C70011CCAC /* D-aspartic_acid.cml in Resources */,
+				76E30D9D27A4371C0011CCAC /* oxalic_acid.cml in Resources */,
+				76E30D6527A435C70011CCAC /* L-valine.cml in Resources */,
+				76E30D5A27A435C70011CCAC /* L-histidine.cml in Resources */,
+				76E30D5927A435C70011CCAC /* L-asparagine.cml in Resources */,
+				76E30D5527A435C70011CCAC /* D-lysine.cml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +692,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7660702B25109529001E18C8 /* ModelCache.swift in Sources */,
+				767960CB2515721D00642CAD /* TransformDragArrowEntity.swift in Sources */,
+				7618FBAE251BB3350012D611 /* TransformGestureController.swift in Sources */,
+				7660702725108A6B001E18C8 /* Extension.swift in Sources */,
 				765847E1250D2E2C002C325B /* ContentView.swift in Sources */,
+				7660701B25106CBF001E18C8 /* MoleculeModel.swift in Sources */,
 				765847DF250D2E2C002C325B /* AppDelegate.swift in Sources */,
-				765847E3250D2E2C002C325B /* Experience.rcproject in Sources */,
+				76607003250F1E7D001E18C8 /* MolecularARView.swift in Sources */,
+				7660701D25106D44001E18C8 /* AtomModel.swift in Sources */,
+				76607006250F20F4001E18C8 /* AtomEntity.swift in Sources */,
+				766070162510338B001E18C8 /* MoleecualrArView$Gesture.swift in Sources */,
+				7660700A250FDE3B001E18C8 /* Molecule.swift in Sources */,
+				7660700C250FEF2A001E18C8 /* Bond.swift in Sources */,
+				768CA4B32510FD540089351E /* CmlImport.swift in Sources */,
+				7660701F25106D91001E18C8 /* BondModel.swift in Sources */,
+				767960C925156A9100642CAD /* TransformDragEntity.swift in Sources */,
+				7660701025101C54001E18C8 /* NonArCameraController.swift in Sources */,
+				76606FC0250EB30A001E18C8 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +782,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -366,7 +807,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,6 +843,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -420,7 +862,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -435,6 +877,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"MoleculAR/Preview Content\"";
 				DEVELOPMENT_TEAM = 7WXW23QUX3;
 				ENABLE_PREVIEWS = YES;
@@ -443,7 +886,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.surrealdev.MoleculAR;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.sdstate.moleculear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,6 +898,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"MoleculAR/Preview Content\"";
 				DEVELOPMENT_TEAM = 7WXW23QUX3;
 				ENABLE_PREVIEWS = YES;
@@ -463,7 +907,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.surrealdev.MoleculAR;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.sdstate.moleculear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
